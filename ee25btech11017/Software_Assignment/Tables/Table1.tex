@@ -1,0 +1,19 @@
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.4} % increases row height
+\begin{tabular}{|p{3.2cm}|p{10cm}|}
+\hline
+\textbf{Criterion} & \textbf{Explanation} \\
+\hline
+\textbf{Simplicity} & Power iteration is mathematically simple and easy to implement using basic matrix–vector operations ($A v$ and $A^T u$). \\
+\hline
+\textbf{Memory Efficiency} & It doesn’t require storing large intermediate matrices; ideal for image data where the matrix size can be very large. \\
+\hline
+\textbf{Speed for Top-k SVD} & It focuses only on the largest few singular values (k values), which are enough for compression, instead of computing the full SVD. \\
+\hline
+\textbf{Numerical Stability} & By normalizing vectors in each iteration, it maintains numerical stability. \\
+\hline
+\end{tabular}
+\caption{Reasons for choosing the Power Iteration Algorithm for Image Compression}
+\label{tab:power_iteration_reasons}
+\end{table}
